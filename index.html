@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100$ lab1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="logo-container" onmouseover="showAuthorInfo()" onmouseout="hideAuthorInfo()" onclick="toggleAuthorInfo()">
+            <img src="logo.png" alt="Лого" class="logo">
+        </div>
+        <div class="text-navbar">
+            <a href="#" onclick="event.preventDefault(); showClosestPointsForm()">Знайти Найближчу Пару Точок</a>
+            <a href="#" onclick="event.preventDefault(); showPasswordGenerator()">Генератор Паролів</a>
+            <a href="#" onclick="event.preventDefault(); showCapitalizeText()">Перша Літера Кожного Слова</a>
+        </div>
+    </div>
+    <div class="author-info" id="authorInfo">
+        <img src="author-photo.jpg" alt="Фото автора" class="author-photo">
+        <p>Максим Любківський<br>Mine biography was here</p>
+    </div>
+    <div id="content">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
